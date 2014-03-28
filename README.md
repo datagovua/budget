@@ -19,6 +19,7 @@
 * [ГосЗатраты (Россия)](http://clearspending.ru/)
 * [Budget of Canada](http://www.budget.gc.ca/2014/home-accueil-eng.html)
 * [Meie Raha (Estonia)](http://meieraha.eu/)
+* [Ireland](http://budget.gov.ie/Budgets/2014/2014.aspx)
 
 ## Офіційні дані
 
