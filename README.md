@@ -7,8 +7,8 @@
 ## Обговорення ідеї
 
 * [IT-країна](http://www.it-krayina.org.ua/openbudget/)
-** [Голосування](http://ideas.it-krayina.org.ua/topic/420190-proekt-vdkritij-byudzhet-42/)
-** Непубличное обсуждение на basecamp (mail@grsmv.com)
+  * [Голосування](http://ideas.it-krayina.org.ua/topic/420190-proekt-vdkritij-byudzhet-42/)
+  * Непубличное обсуждение на basecamp (mail@grsmv.com)
 * [Хакатон Social Boost](http://2014.socialboost.com.ua/ideas/view/2)
 
 ## Приклади реализації
