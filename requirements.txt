@@ -1,2 +1,3 @@
 pyunpack
 patool
+xlrd

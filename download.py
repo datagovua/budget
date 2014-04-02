@@ -33,6 +33,6 @@ if __name__ == '__main__':
   extract_dir = 'temp/'
   remove_dir(extract_dir)
   create_dir(extract_dir)
-#  download(archive_url, local_filename)
+  download(archive_url, local_filename)
   unpack(local_filename, extract_dir)
 
