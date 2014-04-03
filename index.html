@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="http://www.google.com/jsapi"></script>
+<script>
+    google.load('jquery','1.7.1');
+</script>
+
+<link rel="stylesheet" type="text/css" href="lib/jquery.tidy.table.min.css">
+
+<script src="lib/jquery.tidy.table.min.js"></script>
+<script>
+$(document).ready(function() {
+  $.getJSON('financing.json', function(data) {
+    $('#container')
+        .TidyTable(data);
+  });
+});
+</script>
+</head>
+<body>
+<div id="container">
+</div>
+</body>
+</html>
