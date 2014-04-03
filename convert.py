@@ -78,12 +78,12 @@ if __name__ == '__main__':
       # code, total
       data = map(lambda row: format_code(row, desc), data)
  
-      json_filename = desc["json_filename"]
+      json_filename = 'data/' + desc["json_filename"]
       with open(json_filename, 'w') as f:
         f.write(json.dumps({"columnTitles": ["Код классификации", "Сумма"],
                     "columnValues": data
                    }))
-        print 'written to %s' % json_filename 
+        print 'written to %s' % json_filename
       
       # csv
       #for code, total in data:

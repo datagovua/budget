@@ -11,11 +11,11 @@
 <script src="lib/jquery.tidy.table.min.js"></script>
 <script>
 $(document).ready(function() {
-  $.getJSON('financing.json', function(data) {
+  $.getJSON('data/financing.json', function(data) {
     $('#financing')
         .TidyTable(data);
   });
-  $.getJSON('expenses.json', function(data) {
+  $.getJSON('data/expenses.json', function(data) {
     $('#expenses')
         .TidyTable(data);
   });
