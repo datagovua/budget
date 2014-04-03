@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta charset="utf-8">
 <script src="http://www.google.com/jsapi"></script>
 <script>
     google.load('jquery','1.7.1');
@@ -11,14 +12,20 @@
 <script>
 $(document).ready(function() {
   $.getJSON('financing.json', function(data) {
-    $('#container')
+    $('#financing')
+        .TidyTable(data);
+  });
+  $.getJSON('expenses.json', function(data) {
+    $('#expenses')
         .TidyTable(data);
   });
 });
 </script>
 </head>
 <body>
-<div id="container">
-</div>
+Финансирование:
+<div id="financing"></div>
+Расходы:
+<div id="expenses"></div>
 </body>
 </html>

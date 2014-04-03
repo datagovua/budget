@@ -42,7 +42,9 @@ if __name__ == '__main__':
     ('Додаток № 2 зміни до додатку №2.xls', {'desc': u'Фінансування',
                                              'code_column': 0, 'total_column': 2, 'common_fond': 3, 'special_fond': 4, 'json_filename': 'financing.json'}),
     ('Додаток № 3 зміни до додатку №3.xls', {'desc': u'Розподіл видатків',
-                                             'code_column': 0}),
+                                             'code_column': 0,
+                                             'total_column': 13,
+                                             'json_filename': 'expenses.json'}),
     ('Додаток №4 Зміни до додатку №4.xls', {'desc': u'Надання та повернення кредитів', 'code_column': 0}),
     (u'Додаток №5 зміни до додатку №5.xlsx', {'desc': u'Розподіл видатків на централізовані заходи між адміністративно-територіальними одиницями',
                                              'code_column': None}),
@@ -59,7 +61,7 @@ if __name__ == '__main__':
     ('Додаток №11  Крим.xlsx', {'desc': u'Міжбюджетні трансферти (Крим)',
                                 'code_column': 3}),
   ]
-  for filename, desc in [files[1]]:
+  for filename, desc in files[1:3]:
 #    print filename
 #  if len(sys.argv) != 2:
 #    print "Usage: \n%s n\nn - a number from 0 to 10"
