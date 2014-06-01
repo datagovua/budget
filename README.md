@@ -3,6 +3,16 @@
 
 Державний бюджет України / Государственный бюджет Украины
 
+
+## Open Budget -> DataHub & OpenSpending
+
+    ./import-from-openbudget.py > data/expenses.csv
+
+## Open Budget: Ініціатива Sergey Gerasimov @ SoftServe (mail[at]grsmv.com)
+
+* https://api.open-budget.org/
+* https://github.com/open-budget/api
+
 ## Скрипт обробки офіційних даних
 
 Prerequisites: Linux, Python, pip
@@ -26,7 +36,6 @@ Prerequisites: Linux, Python, pip
 
 * [IT-країна](http://www.it-krayina.org.ua/openbudget/)
   * [Голосування](http://ideas.it-krayina.org.ua/topic/420190-proekt-vdkritij-byudzhet-42/)
-  * Непубличное обсуждение на basecamp (mail@grsmv.com)
 * [Хакатон Social Boost](http://2014.socialboost.com.ua/ideas/view/2)
 * [Github issues](https://github.com/Maidan-hackaton/budget/issues)
 

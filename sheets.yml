@@ -1,0 +1,104 @@
+temp/f415607n146.xls:
+  [{
+    'desc': u'Доходи',
+    'code_column': 0,
+    'total_column': 3,
+    'json_filename': 'earnings.json'
+  },
+  {
+    'desc': u'Фінансування',
+    'code_column': 0, 'total_column': 2,
+    'common_fond': 3, 'special_fond': 4,
+    'json_filename': 'financing.json'
+  },
+  {
+    'desc': u'Розподіл видатків',
+    'code_column': 1,
+    'total_column': 14,
+    'json_filename': 'expenses.json'
+  },
+  {
+    'desc': u'Надання та повернення кредитів',
+    'code_column': 0
+  },
+  {
+    'desc': u'Розподіл видатків на централізовані заходи між адміністративно-територіальними одиницями',
+     'code_column': None
+  },
+  {
+    'desc': u'Міжбюджетні трансферти',
+    'code_column': 4
+  },
+  {
+    'desc':u'Міжбюджетні трансферти',
+    'code_column': 0
+  },
+  {
+    'desc': u'Видатки на здійснення правосуддя',
+    'code_column': 0
+  },
+  {
+    'desc': u'Перелік кредитів (позик)',
+    'code_column': 3
+  },
+  {
+    'desc': u'Субвенції на дороги',
+    'code_column': 0
+  },
+  {
+    'desc': u'Міжбюджетні трансферти (Крим)',
+    'code_column': 3
+  }]
+
+temp/f421359n93.xls:
+  [{
+    'desc': u'Доходи',
+    'code_column': 0,
+    'total_column': 2,
+    'json_filename': 'earnings.json'
+  },
+  {
+    'desc': u'Фінансування',
+    'code_column': 0, 'total_column': 2,
+    'common_fond': 3, 'special_fond': 4,
+    'json_filename': 'financing.json'
+  },
+  {
+    'desc': u'Розподіл видатків',
+    'code_column': 0,
+    'total_column': 13,
+    'json_filename': 'expenses.json'
+  },
+  {
+    'desc': u'Надання та повернення кредитів',
+    'code_column': 0
+  },
+  {
+    'desc': u'Розподіл видатків на централізовані заходи між адміністративно-територіальними одиницями',
+     'code_column': None
+  },
+  {
+    'desc': u'Міжбюджетні трансферти',
+    'code_column': 4
+  },
+  {
+    'desc':u'Міжбюджетні трансферти',
+    'code_column': 0
+  },
+  {
+    'desc': u'Видатки на здійснення правосуддя',
+    'code_column': 0
+  },
+  {
+    'desc': u'Перелік кредитів (позик)',
+    'code_column': 3
+  },
+  {
+    'desc': u'Субвенції на дороги',
+    'code_column': 0
+  },
+  {
+    'desc': u'Міжбюджетні трансферти (Крим)',
+    'code_column': 3
+  }]
+

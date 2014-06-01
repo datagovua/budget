@@ -35,4 +35,14 @@ if __name__ == '__main__':
   create_dir(extract_dir)
   download(archive_url, local_filename)
   unpack(local_filename, extract_dir)
+  # original
+  archive_url='http://zakon4.rada.gov.ua/laws/file/text/23/f415607n146.zip'
+  local_filename = 'budget2014.zip'
+  download(archive_url, local_filename)
+  unpack(local_filename, extract_dir)
+  # changes
+  archive_url='http://zakon4.rada.gov.ua/laws/file/text/23/f421359n93.zip'
+  local_filename = 'budget2014-changes.zip'
+  download(archive_url, local_filename)
+  unpack(local_filename, extract_dir)
 

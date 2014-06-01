@@ -5,6 +5,8 @@ import codecs
 import locale
 import sys
 import json
+import yaml
+import csv
 
 # Wrap sys.stdout into a StreamWriter to allow writing unicode.
 sys.stdout = codecs.getwriter(locale.getpreferredencoding())(sys.stdout) 
@@ -20,56 +22,27 @@ def is_code(a):
 
 def format_code(row, desc):
   code = int(float(row[desc["code_column"]]))
-  total = float(row[desc["total_column"]])
+  try:
+    total = float(row[desc["total_column"]])
+  except:
+    print row,desc["total_column"]
   return code, total
 
 
-def get_raw_data(filename):
+def get_raw_data(filename, sheet_number):
   rb = xlrd.open_workbook(filename,formatting_info=False)
   data = []
-  sheet = rb.sheet_by_index(0)
+  sheet = rb.sheet_by_index(sheet_number)
   for rownum in range(sheet.nrows):
     row = sheet.row_values(rownum)
     data.append(row)
   return data
 
 
-if __name__ == '__main__':
-  xls_folder = 'temp/d1/'
-  files = [
-    ('Додаток № 1 зміни до додатку №1.xls', {'desc': u'Доходи',
-                                             'code_column': 0}),
-    ('Додаток № 2 зміни до додатку №2.xls', {'desc': u'Фінансування',
-                                             'code_column': 0, 'total_column': 2, 'common_fond': 3, 'special_fond': 4, 'json_filename': 'financing.json'}),
-    ('Додаток № 3 зміни до додатку №3.xls', {'desc': u'Розподіл видатків',
-                                             'code_column': 0,
-                                             'total_column': 13,
-                                             'json_filename': 'expenses.json'}),
-    ('Додаток №4 Зміни до додатку №4.xls', {'desc': u'Надання та повернення кредитів', 'code_column': 0}),
-    (u'Додаток №5 зміни до додатку №5.xlsx', {'desc': u'Розподіл видатків на централізовані заходи між адміністративно-територіальними одиницями',
-                                             'code_column': None}),
-    ('Додаток №6 зміни до додатку №6.xlsx', {'desc': u'Міжбюджетні трансферти',
-                                             'code_column': 4}),
-    ('Додаток №7 зміни до додатку №7.xlsx', {'desc':u'Міжбюджетні трансферти',
-                                             'code_column': 0}),
-    ('Додаток №8 зміни до додатку №8.xls', {'desc': u'Видатки на здійснення правосуддя',
-                                            'code_column': 0}),
-    ('Додаток №9 зміни до додатку №9.xlsx', {'desc': u'Перелік кредитів (позик)',
-                                             'code_column': 3}),
-    ('Додаток №10 зміни до додатку №10.xls', {'desc': u'Субвенції на дороги',
-                                              'code_column': 0}),
-    ('Додаток №11  Крим.xlsx', {'desc': u'Міжбюджетні трансферти (Крим)',
-                                'code_column': 3}),
-  ]
-  for filename, desc in files[1:3]:
-#    print filename
-#  if len(sys.argv) != 2:
-#    print "Usage: \n%s n\nn - a number from 0 to 10"
-#    sys.exit(-1)
-#  fileno = int(sys.argv[1])
-    filename = xls_folder + filename
-  
-    data = get_raw_data(filename)
+def read(filename, sheets):
+  all_data = {}
+  for sheet_number, desc in enumerate(sheets[:3]):
+    data = get_raw_data(filename, sheet_number)
   
     # first column should be the numeric code
     if desc['code_column'] is not None:
@@ -77,17 +50,54 @@ if __name__ == '__main__':
 
       # code, total
       data = map(lambda row: format_code(row, desc), data)
- 
+
+      for code, total in data:
+        all_data[code] = total
       json_filename = 'data/' + desc["json_filename"]
-      with open(json_filename, 'w') as f:
-        f.write(json.dumps({"columnTitles": ["Код классификации", "Сумма"],
-                    "columnValues": data
-                   }))
-        print 'written to %s' % json_filename
+      write(json_filename, data) 
       
-      # csv
-      #for code, total in data:
-      #    print u'"%s",' % cell,
-      #  print
     else:
       print desc['desc']
+  return all_data
+
+
+def write(json_filename, data):
+  with open(json_filename, 'w') as f:
+    f.write(json.dumps({"columnTitles": ["Код классификации", "Сумма"],
+                "columnValues": data
+               }))
+    print 'written to %s' % json_filename
+
+
+def unicode_csv_reader(utf8_data, dialect=csv.excel, **kwargs):
+  csv_reader = csv.reader(utf8_data, dialect=dialect, **kwargs)
+  for row in csv_reader:
+    yield [unicode(cell, 'utf-8') for cell in row]
+
+
+def read_classification(filename):
+  code_to_name = {}
+  with open(filename, 'r') as csvfile:
+    readr = unicode_csv_reader(csvfile, delimiter=',', quotechar='"')
+    for code, name in readr:
+      code_to_name[code] = name
+  return code_to_name
+
+
+if __name__ == '__main__':
+
+  with open("sheets.yml", 'r') as f:
+    sheets_info = yaml.load(f)
+
+  data = read('temp/f415607n146.xls', sheets_info['temp/f415607n146.xls'])
+  data_add = read('temp/f421359n93.xls', sheets_info['temp/f421359n93.xls'])
+  for code, total in data_add.iteritems():
+    #if not code in data:
+    #  print code
+    data[code] = total
+
+  code_to_name = read_classification('data/classification.csv')  
+  
+  for code, total in sorted(data.iteritems()):
+    print code, code_to_name[code], total
+
