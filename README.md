@@ -1,29 +1,13 @@
-Бюджет
-======
+Бюджетні дані
+=============
 
-Державний бюджет України / Государственный бюджет Украины
+Існують наступні рівні бюджетних даних:
 
+* Державний бюджет
+* Обласний бюджет
+* Міський бюджет
 
-## Open Budget -> DataHub & OpenSpending
-
-    ./import-from-openbudget.py > data/expenses.csv
-
-## Open Budget: Ініціатива Sergey Gerasimov @ SoftServe (mail[at]grsmv.com)
-
-* https://api.open-budget.org/
-* https://github.com/open-budget/api
-
-## Скрипт обробки офіційних даних
-
-Prerequisites: Linux, Python, pip
-
-    ./dependencies.sh # install dependencies
-    . export_path.sh  # extend $PATH with ~/.local/bin
-    ./download.py     # download official data and unpack
-    ./convert.py      # TODO convert to csv or json
-
-
-## Офіційні дані
+## Державний бюджет
 
 * Про Державний бюджет України на 2014 рік
   * [Рада](http://zakon4.rada.gov.ua/laws/show/719-18)
@@ -33,6 +17,59 @@ Prerequisites: Linux, Python, pip
   * [Виконання Державного бюджету України](http://www.treasury.gov.ua/main/uk/doccatalog/list?currDir=146477)
   * [Показники виконання Державного бюджету України](http://195.78.68.18/minfin/control/uk/publish/archive/main?cat_id=77643)
 
+## Обласні бюджети
+
+* Одеська область
+  * 2016
+    * [бюджет](http://oblrada.odessa.gov.ua/wp-content/uploads/49-VII.pdf) (створено 21 грудня 2015 року)
+
+## Міські бюджети
+
+* Одеса
+  * 2016
+    * [бюджет (проект)](http://omr.gov.ua/ru/67025/) (змінено 18 листопада 2015 року)
+    * виконання
+  * 2015
+    * [бюджет](http://omr.gov.ua/ru/acts/council/67004/) (змінено 16 грудня 2015 року)
+    * [виконання](http://omr.gov.ua/ru/news/79118/) (станом на 6 січня 2016 року)
+  * 2014
+    * [бюджет](http://omr.gov.ua/ru/acts/council/57231/) (змінено 4 грудня 2014 року)
+    * [виконання](http://omr.gov.ua/ru/acts/council/66397/) (звіт затверджено 24 грудня 2014 року)
+
+
+## Скрипти обробки файлів держбюджету
+
+Prerequisites: Linux, Python, pip
+
+    ./dependencies.sh # install dependencies
+    . export_path.sh  # extend $PATH with ~/.local/bin
+    ./download.py     # download official data and unpack
+    ./convert.py      # TODO convert to csv or json
+
+## Open Budget
+
+Open Budget - ініціатива Sergey Gerasimov @ SoftServe (mail[at]grsmv.com).
+
+Ідея:
+
+* зібрати оригінальні файли бюджетів в одному місці
+* обробити в ручному режимі
+* надати API
+* візуалізувати
+
+Недоліки:
+
+* ручний режим збору файлів
+* ручний режим обробки файлів (https://github.com/open-budget/data/issues/55)
+
+Реалізація:
+
+* https://api.open-budget.org/
+* https://github.com/open-budget/api
+
+## Конвертація Open Budget у CSV стандарту OpenSpending
+
+    ./import-from-openbudget.py > data/expenses.csv
 
 ## Обговорення ідеї
 
