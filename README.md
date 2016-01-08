@@ -7,34 +7,37 @@
 * Обласний бюджет
 * Міський бюджет
 
-## Державний бюджет
+## Джерела даних
 
-* Про Державний бюджет України на 2014 рік
-  * [Рада](http://zakon4.rada.gov.ua/laws/show/719-18)
-  * [Мінфін](http://www.minfin.gov.ua/file/link/397661/file/budg.zip) (zip)
-  * [Законопроект від 27.03.2014](http://w1.c1.rada.gov.ua/pls/zweb2/webproc4_1?pf3511=50433) (не опублікований)
-* Виконання бюджету
-  * [Виконання Державного бюджету України](http://www.treasury.gov.ua/main/uk/doccatalog/list?currDir=146477)
-  * [Показники виконання Державного бюджету України](http://195.78.68.18/minfin/control/uk/publish/archive/main?cat_id=77643)
+### Державний бюджет
 
-## Обласні бюджети
+* 2016
+  * [бюджет](http://zakon3.rada.gov.ua/laws/show/928-19/page2) (створено 24 грудня 2015)
+* 2015
+  * [бюджет](http://zakon3.rada.gov.ua/laws/show/80-19) (змінено 24 грудня 2015)
+  * [виконання](http://www.treasury.gov.ua/main/uk/doccatalog/list?currDir=264515) (оперативна інформація)
+* 2014
+  * [бюджет](http://zakon4.rada.gov.ua/laws/show/719-18) (змінено 25 грудня 2014)
+  * [виконання](http://www.treasury.gov.ua/main/uk/doccatalog/list?currDir=257806) (звіт станом на 01 квітня 2015)
+
+### Обласні бюджети
 
 * Одеська область
   * 2016
-    * [бюджет](http://oblrada.odessa.gov.ua/wp-content/uploads/49-VII.pdf) (створено 21 грудня 2015 року)
+    * [бюджет](http://oblrada.odessa.gov.ua/wp-content/uploads/49-VII.pdf) (створено 21 грудня 2015)
 
-## Міські бюджети
+### Міські бюджети
 
 * Одеса
   * 2016
-    * [бюджет (проект)](http://omr.gov.ua/ru/67025/) (змінено 18 листопада 2015 року)
+    * [бюджет (проект)](http://omr.gov.ua/ru/67025/) (змінено 18 листопада 2015)
     * виконання
   * 2015
-    * [бюджет](http://omr.gov.ua/ru/acts/council/67004/) (змінено 16 грудня 2015 року)
-    * [виконання](http://omr.gov.ua/ru/news/79118/) (станом на 6 січня 2016 року)
+    * [бюджет](http://omr.gov.ua/ru/acts/council/67004/) (змінено 16 грудня 2015)
+    * [виконання](http://omr.gov.ua/ru/news/79118/) (станом на 6 січня 2016)
   * 2014
-    * [бюджет](http://omr.gov.ua/ru/acts/council/57231/) (змінено 4 грудня 2014 року)
-    * [виконання](http://omr.gov.ua/ru/acts/council/66397/) (звіт затверджено 24 грудня 2014 року)
+    * [бюджет](http://omr.gov.ua/ru/acts/council/57231/) (змінено 4 грудня 2014)
+    * [виконання](http://omr.gov.ua/ru/acts/council/66397/) (звіт затверджено 24 грудня 2014)
 
 
 ## Скрипти обробки файлів держбюджету
