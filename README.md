@@ -39,6 +39,9 @@
     * [бюджет](http://omr.gov.ua/ru/acts/council/57231/) (змінено 4 грудня 2014)
     * [виконання](http://omr.gov.ua/ru/acts/council/66397/) (звіт затверджено 24 грудня 2014)
 
+## Стандартизація даних
+
+Найбільш відомий проект зі стандартизації бюджетних даних - [Fiscal Data Package](http://fiscal.dataprotocols.org/spec/#data-files)
 
 ## Скрипти обробки файлів держбюджету
 
