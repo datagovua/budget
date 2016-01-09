@@ -21,8 +21,8 @@ Open Budget - ініціатива Sergey Gerasimov @ SoftServe (mail[at]grsmv.c
 
 Реалізація:
 
-* https://api.open-budget.org/
-* https://github.com/open-budget/api
+* http://open-budget.org/
+* https://github.com/open-budget/
 
 ## Конвертація Open Budget у CSV стандарту OpenSpending
 
