@@ -1,12 +1,12 @@
-Рівень,Тип,Рік,Документ,Дата
-Державний,Бюджет,2016,http://zakon3.rada.gov.ua/laws/show/928-19/page2,24 грудня 2015
-Державний,Бюджет,2015,http://zakon3.rada.gov.ua/laws/show/80-19,24 грудня 2015
-Державний,Виконання,2015,http://www.treasury.gov.ua/main/uk/doccatalog/list?currDir=264515,оперативна інформація
-Державний,Бюджет,2014,http://zakon4.rada.gov.ua/laws/show/719-18,25 грудня 2014
-Державний,Виконання,2014,http://www.treasury.gov.ua/main/uk/doccatalog/list?currDir=257806,01 квітня 2015
-Обласний,Бюджет,2016,http://oblrada.odessa.gov.ua/wp-content/uploads/49-VII.pdf,21 грудня 2015
-Міський,Бюджет,2016,http://omr.gov.ua/ru/67025/,18 листопада 2015
-Міський,Бюджет,2015,http://omr.gov.ua/ru/acts/council/67004/,16 грудня 2015
-Міський,Виконання,2015,http://omr.gov.ua/ru/news/79118/,16 грудня 2015
-Міський,Бюджет,2014,http://omr.gov.ua/ru/acts/council/57231/,4 грудня 2014
-Міський,Виконання,2014,http://omr.gov.ua/ru/acts/council/66397/,24 грудня 2014
+Рівень,Тип,Назва,Рік,Документ,Дата
+Державний,Бюджет,Україна,2016,http://zakon3.rada.gov.ua/laws/show/928-19/page2,24 грудня 2015
+Державний,Бюджет,Україна,2015,http://zakon3.rada.gov.ua/laws/show/80-19,24 грудня 2015
+Державний,Виконання,Україна,2015,http://www.treasury.gov.ua/main/uk/doccatalog/list?currDir=264515,оперативна інформація
+Державний,Бюджет,Україна,2014,http://zakon4.rada.gov.ua/laws/show/719-18,25 грудня 2014
+Державний,Виконання,Україна,2014,http://www.treasury.gov.ua/main/uk/doccatalog/list?currDir=257806,01 квітня 2015
+Обласний,Бюджет,Одеська,2016,http://oblrada.odessa.gov.ua/wp-content/uploads/49-VII.pdf,21 грудня 2015
+Міський,Бюджет,Одеса,2016,http://omr.gov.ua/ru/67025/,18 листопада 2015
+Міський,Бюджет,Одеса,2015,http://omr.gov.ua/ru/acts/council/67004/,16 грудня 2015
+Міський,Виконання,Одеса,2015,http://omr.gov.ua/ru/news/79118/,16 грудня 2015
+Міський,Бюджет,Одеса,2014,http://omr.gov.ua/ru/acts/council/57231/,4 грудня 2014
+Міський,Виконання,Одеса,2014,http://omr.gov.ua/ru/acts/council/66397/,24 грудня 2014
