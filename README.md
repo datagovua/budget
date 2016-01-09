@@ -18,11 +18,7 @@ Prerequisites: Linux, Python, pip
 
 ## Обговорення ідеї
 
-* [IT-країна](http://www.it-krayina.org.ua/openbudget/)
-  * [Голосування](http://ideas.it-krayina.org.ua/topic/420190-proekt-vdkritij-byudzhet-42/)
-* [Хакатон Social Boost](http://2014.socialboost.com.ua/ideas/view/2)
-* [Github issues](https://github.com/Maidan-hackaton/budget/issues)
-
+Є питання? Пишіть: [Github issues](https://github.com/Maidan-hackaton/budget/issues)
 
 ## Приклади реализації
 
