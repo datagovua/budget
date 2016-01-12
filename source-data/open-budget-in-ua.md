@@ -23,6 +23,6 @@
 Реалізація:
 
 * Продукт: http://www.openbudget.in.ua/
-* Синцевий код: https://github.com/kavaleriy/budget
+* Сирцевий код: https://github.com/kavaleriy/budget
 * CSV-файли: https://github.com/kavaleriy/budget/tree/master/db
 * Дамп бази даних: https://github.com/kavaleriy/budget/tree/master/dump/budget_production
